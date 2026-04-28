@@ -1,0 +1,77 @@
+body{
+    background-color:black;
+    color:white;
+    font-family: 'Segoe UI';
+    max-width: 1800px;
+    padding: 5px;
+}
+
+#sessao-sobre{
+    background-color: gray;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: green;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    display: inline;
+    margin: 10px;
+}
+
+.imgtopo{
+    width: 300px;
+    height: 150px;
+}
+
+.imgbotton{
+    width: 700px;
+    height: 450px;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+#btn-enviar{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
+
+#btn-enviar:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: gray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
