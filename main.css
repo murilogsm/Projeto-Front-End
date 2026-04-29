@@ -76,6 +76,11 @@ section{
     height: 400px;
 }
 
+.imgfooter{
+    width: 550px;
+    height: 400px;
+}
+
 p{
     line-height: 20px;
     max-width: 500px;
