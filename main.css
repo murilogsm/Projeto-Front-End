@@ -1,13 +1,19 @@
-body{
-    background-color:black;
-    color:white;
-    font-family: 'Segoe UI';
-    max-width: 1800px;
-    padding: 5px;
+html{
+    scroll-behavior: smooth;
 }
 
-#sessao-sobre{
-    background-color: gray;
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI';
+
+    margin: 0 auto;
+}
+
+/* MINHA SEGUNDA SECTION SE CHAMA SESSAO-SOBRE*/
+/* COLOQUEM O NOME DA SEGUNDA SECTION DE VOCÊS*/
+#sessao-sobre{ 
+    background-color: rgb(40, 46, 51);;
 }
 
 a{
@@ -16,28 +22,36 @@ a{
 }
 
 a:hover{
-    color: green;
+    color:green
 }
 
 header{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(30, 34, 37);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-
-section{
-    display:flex;
+.container{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    max-width: 1200px;   
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
 }
 
 li{
     display: inline;
-    margin: 10px;
+    margin: 20px;   
 }
 
 .imgtopo{
@@ -45,21 +59,39 @@ li{
     height: 150px;
 }
 
-.imgbotton{
-    width: 700px;
-    height: 450px;
+.main{
+    flex-direction: column;
+    padding: 15px;
+}
+
+section{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;   
+}
+
+.imgbody{
+    width: 400px;
+    height: 400px;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
 }
 
 input{
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
+    height: 20px;
     padding: 5px;
 }
 
 #btn-enviar{
     width: 100px;
     height: 30px;
-    background-color: green;
+    background-color: rgb(67, 160, 67);
     font-weight: bold;
     color: white;
 }
@@ -69,9 +101,22 @@ input{
 }
 
 footer{
-    background-color: gray;
+    background-color: rgb(40, 46, 51);
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:780px) {
+    .container{
+        flex-direction: column;
+    }
+    .imgbody{
+        width: 250px;
+        height: 250px;
+    }
+    .imgtopo{
+        display: none;
+    }
 }
